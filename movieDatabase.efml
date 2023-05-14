@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore context-namespace="cnFilmadatbazis" p1:name="Filmadatbazis" p1:Guid="ccb424c8-4d4e-475d-85c9-c85dc4736d83" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="enActor" entity-set="enActors" table="Actor" p1:Guid="5767b674-a1e4-43e8-a23f-4544f3a2df25">
+    <id name="act_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="9c7b35a5-65f4-4f0e-844e-2355c8e3e830">
+      <column name="" />
+    </id>
+    <property name="act_fname" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="93fb65f1-2089-4f9c-b397-db3be8fb4d31">
+      <column name="" length="20" />
+    </property>
+    <property name="act_lname" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="5a780d36-b751-4d66-9946-cf3b92b81f2b">
+      <column name="" length="20" />
+    </property>
+    <property name="act_gender" type="String" p1:ValidateMaxLength="1" p1:ValidateRequired="true" p1:Guid="90ffe0a0-359d-4430-aa41-d512088d8302">
+      <column name="" length="1" />
+    </property>
+  </class>
+  <class name="enMovie_Cast" entity-set="enMovie_Casts" table="Movie_Cast" p1:Guid="61bc3f95-59d3-483d-8fcb-be6f90f52846">
+    <id name="id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="929ce31f-5dad-461e-acf6-ed246bc4d4fd">
+      <column name="" />
+    </id>
+    <property name="act_id" type="Int32" p1:ValidateRequired="true" p1:Guid="f434d46a-4946-41dd-a3ea-dcd404503887">
+      <column name="" />
+    </property>
+    <property name="mov_id" type="Int32" p1:ValidateRequired="true" p1:Guid="ff0d5d4d-867d-46e3-b7c3-34647e0838b8">
+      <column name="" />
+    </property>
+    <property name="role" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="0f2f4ef8-8822-406b-8721-3d1772117622">
+      <column name="" length="30" />
+    </property>
+  </class>
+  <class name="enMovie" entity-set="enMovies" table="Movie" p1:Guid="f0a84ce0-a2e3-4878-9c91-fd636fe6ca03">
+    <id name="mov_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="2d7046b1-f21a-475d-98c6-3b7a0fee1b25">
+      <column name="" />
+    </id>
+    <property name="mov_title" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="86d6ef88-46cd-46de-b3ca-6a46f5f73e66">
+      <column name="" length="50" />
+    </property>
+    <property name="mov_description" type="String" p1:ValidateMaxLength="255" p1:ValidateRequired="true" p1:Guid="c7adf644-7a0b-41ba-8936-0635c89a5ce9">
+      <column name="" length="255" />
+    </property>
+    <property name="move_year" type="Int32" p1:ValidateRequired="true" p1:Guid="b314cf87-261b-4718-af5c-ec1a260a78a7">
+      <column name="" />
+    </property>
+    <property name="mov_time" type="Int32" p1:ValidateRequired="true" p1:Guid="4325ac03-ddc9-4f64-a681-c7190cf7e5e2">
+      <column name="" />
+    </property>
+    <property name="mov_lang" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="585524ed-83ca-47c4-a264-01bf17461bb6">
+      <column name="" length="50" />
+    </property>
+    <property name="mov_dt_rel" type="Date" p1:ValidateRequired="true" p1:Guid="ebdba991-1e93-49b1-b360-260ef4a0826c">
+      <column name="" />
+    </property>
+    <property name="mov_rel_country" type="String" p1:ValidateMaxLength="5" p1:ValidateRequired="true" p1:Guid="1432c9cc-421d-43bb-9835-1714a6db7ae5">
+      <column name="" length="5" />
+    </property>
+    <property name="mov_trailer" type="String" p1:ValidateRequired="true" p1:Guid="e5f9970a-cd24-4f0b-952e-10407554c4cd">
+      <column name="" default="255" />
+    </property>
+    <property name="mov_pic" type="String" p1:ValidateMaxLength="255" p1:ValidateRequired="true" p1:Guid="89e3d99e-692c-4b64-9ba7-f4db92e50c27">
+      <column name="" length="255" />
+    </property>
+  </class>
+  <class name="enDirector" entity-set="enDirectors" table="Director" p1:Guid="5f3ed3f5-b6fc-4b2f-83f5-7e36e5d667da">
+    <id name="dir_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="b623d5c1-6c33-48d2-9170-fce48e7a36bf">
+      <column name="" />
+    </id>
+    <property name="dir_fname" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="747185e4-dd0b-4068-ac1a-47df1a15cc24">
+      <column name="" length="20" />
+    </property>
+    <property name="dir_lname" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="25096848-9d8d-4b04-9356-2de60f9b7bf9">
+      <column name="" length="20" />
+    </property>
+  </class>
+  <class name="enMovie_Direction" entity-set="enMovie_Directions" table="Movie_Direction" p1:Guid="8c45c21a-e163-47bd-95fe-befc1bcce1ed">
+    <id name="id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="c2c632f1-4be5-4fe5-a187-0c13462af97d">
+      <column name="" />
+    </id>
+    <property name="dir_id" type="Int32" p1:ValidateRequired="true" p1:Guid="16cd6b2a-b13d-4327-8fc5-05eed781931e">
+      <column name="" />
+    </property>
+    <property name="mov_id" type="Int32" p1:ValidateRequired="true" p1:Guid="e8c0a274-ccc9-4cdf-b236-30bd291df0bd">
+      <column name="" />
+    </property>
+  </class>
+  <class name="enMovie_Genres" entity-set="enMovie_Genres" table="Movie_Genres" p1:Guid="dc6f07ef-6cfe-4066-bf84-9d1c219b52bc">
+    <id name="id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="00e549ee-9f48-41bf-befb-8481f7765f97">
+      <column name="" />
+    </id>
+    <property name="mov_id" type="Int32" p1:ValidateRequired="true" p1:Guid="f17d5701-30b0-44de-96c7-3ce80cbb3693">
+      <column name="" />
+    </property>
+    <property name="gen_id" type="Int32" p1:ValidateRequired="true" p1:Guid="16ebe351-ac7f-4740-99ba-22f395789cae">
+      <column name="" />
+    </property>
+  </class>
+  <class name="enGenres" entity-set="enGenres" table="Genres" p1:Guid="1a328381-72a0-4ca1-a2d5-fca5230caa1e">
+    <id name="gen_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="fa274e0c-8fd7-4735-b220-65500dd16494">
+      <column name="" />
+    </id>
+    <property name="gen_title" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="0bddd730-97eb-4b63-abc7-08f09c456826">
+      <column name="" length="20" />
+    </property>
+  </class>
+  <class name="enRating" entity-set="enRatings" table="Rating" p1:Guid="94834492-6132-4b8b-8bd2-d8dead64e1aa">
+    <id name="id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="85ebc498-4239-4deb-9303-0f19bd352961">
+      <column name="" />
+    </id>
+    <property name="mov_id" type="Int32" p1:ValidateRequired="true" p1:Guid="2879595b-7ae8-49ab-a94c-3aab226affe5">
+      <column name="" />
+    </property>
+    <property name="rev_id" type="Int32" p1:ValidateRequired="true" p1:Guid="15179b64-6bff-4d25-bab6-6fa85985b868">
+      <column name="" />
+    </property>
+    <property name="rev_stars" type="Int32" p1:ValidateRequired="true" p1:Guid="8317e199-473b-4908-958e-a14fac8447f2">
+      <column name="" />
+    </property>
+    <property name="num_o_ratings" type="Int32" p1:ValidateRequired="true" p1:Guid="842dc4e5-7cbd-4580-8f9f-131665834a8d">
+      <column name="" />
+    </property>
+  </class>
+  <class name="enReviewer" entity-set="enReviewers" table="Reviewer" p1:Guid="32ec04de-7b12-4488-9044-58b6c13b9446">
+    <id name="rev_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="781e2ace-06f6-4dce-8b38-51612d54d4cd">
+      <column name="" />
+    </id>
+    <property name="rev_name" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="a25d4e29-81be-4a18-b3d8-4c1100cf1ce5">
+      <column name="" length="30" />
+    </property>
+  </class>
+  <class name="enStreaming" entity-set="enStreamings" table="Streaming" p1:Guid="ec6774a2-fbda-4ce7-a19a-51fb74920989">
+    <id name="streaming_id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="83a86d96-c71f-441f-8bbc-fbe4dc00c3ed">
+      <column name="" />
+    </id>
+    <property name="streaming_name" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="dc37f2bd-f63b-4350-892a-9d78bcd7e935">
+      <column name="" length="20" />
+    </property>
+  </class>
+  <class name="enMovie_Streaming" entity-set="enMovie_Streamings" table="Movie_Streaming" p1:Guid="4e84ccb1-4148-40cf-bce2-af1d3e0ceae6">
+    <id name="id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="4d9d7156-143e-4ea3-87ab-ab6eb01fe520">
+      <column name="" />
+    </id>
+    <property name="mov_id" type="Int32" p1:ValidateRequired="true" p1:Guid="7239211b-1de8-4e40-9193-2251af35509a">
+      <column name="" />
+    </property>
+    <property name="streaming_id" type="Int32" p1:ValidateRequired="true" p1:Guid="e02ae1ae-bd14-4810-bf15-55c1b07038c4">
+      <column name="" />
+    </property>
+  </class>
+  <associations>
+    <association name="enActor_enMovie_Cast" cardinality="OneToMany" p1:Guid="0947ee7a-74cb-4933-8ae9-801e154771a7">
+      <end1 multiplicity="One" name="enActor" class="enMovie_Cast" relation-class="enActor" constrained="True" lazy="False" p1:Guid="5e0aa9fe-dacf-4e18-a29d-debbd24ca0b3">
+        <property name="act_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Casts" class="enActor" relation-class="enMovie_Cast" lazy="False" p1:Guid="53606182-416e-42a7-8340-a6f8ba6fabda">
+        <property name="act_id" />
+      </end2>
+    </association>
+    <association name="enMovie_enMovie_Cast" cardinality="OneToMany" p1:Guid="21d47175-fb42-4216-b0b2-82d2a8de7dd4">
+      <end1 multiplicity="One" name="enMovie" class="enMovie_Cast" relation-class="enMovie" constrained="True" lazy="False" p1:Guid="ec005d3f-4d0b-4fc8-b07d-b1389c78484d">
+        <property name="mov_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Casts" class="enMovie" relation-class="enMovie_Cast" lazy="False" p1:Guid="2a254d3f-9f9f-48b5-b63d-a1ae7c662faa">
+        <property name="mov_id" />
+      </end2>
+    </association>
+    <association name="enDirector_enMovie_Direction" cardinality="OneToMany" p1:Guid="5ba85854-480a-4451-b60f-b436b4472530">
+      <end1 multiplicity="One" name="enDirector" class="enMovie_Direction" relation-class="enDirector" constrained="True" lazy="False" p1:Guid="da174712-6879-4a32-ba44-cca8bd8ec103">
+        <property name="dir_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Directions" class="enDirector" relation-class="enMovie_Direction" lazy="False" p1:Guid="6a2822ca-35d8-4d68-b4a6-e651ec6abaf6">
+        <property name="dir_id" />
+      </end2>
+    </association>
+    <association name="enMovie_enMovie_Direction" cardinality="OneToMany" p1:Guid="96a5b403-0c10-4869-98c3-25da5963c9ef">
+      <end1 multiplicity="One" name="enMovie" class="enMovie_Direction" relation-class="enMovie" constrained="True" lazy="False" p1:Guid="65a3e91c-75f8-4b41-b127-d29888a75478">
+        <property name="mov_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Directions" class="enMovie" relation-class="enMovie_Direction" lazy="False" p1:Guid="73a991a3-7d25-4cbe-ac82-c39316c72ced">
+        <property name="mov_id" />
+      </end2>
+    </association>
+    <association name="enGenres_enMovie_Genres" cardinality="OneToMany" p1:Guid="03b4ec74-cf57-4339-80bc-b39001b5ff6c">
+      <end1 multiplicity="One" name="enGenres" class="enMovie_Genres" relation-class="enGenres" constrained="True" lazy="False" p1:Guid="98f3ed80-f545-4d0a-994e-e585b13161b1">
+        <property name="gen_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Genres" class="enGenres" relation-class="enMovie_Genres" lazy="False" p1:Guid="8ab06397-7e53-4aee-9705-81ada43e0d9d">
+        <property name="gen_id" />
+      </end2>
+    </association>
+    <association name="enMovie_enMovie_Genres" cardinality="OneToMany" p1:Guid="e79144ad-6113-409c-b878-27d3c2e976fa">
+      <end1 multiplicity="One" name="enMovie" class="enMovie_Genres" relation-class="enMovie" constrained="True" lazy="False" p1:Guid="0c107f99-78d9-449c-a702-027b4cb6cbe1">
+        <property name="mov_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Genres" class="enMovie" relation-class="enMovie_Genres" lazy="False" p1:Guid="db49a142-a927-4320-9a6b-67caa1719c9c">
+        <property name="mov_id" />
+      </end2>
+    </association>
+    <association name="enReviewer_enRating" cardinality="OneToMany" p1:Guid="da658fb6-8365-4782-bccf-c45de9906d21">
+      <end1 multiplicity="One" name="enReviewer" class="enRating" relation-class="enReviewer" constrained="True" lazy="False" p1:Guid="02d04bda-17bd-45dd-9b16-811370583b31">
+        <property name="rev_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enRatings" class="enReviewer" relation-class="enRating" lazy="False" p1:Guid="d866e5b9-1b2e-49b9-9a40-44a21e504ef2">
+        <property name="rev_id" />
+      </end2>
+    </association>
+    <association name="enMovie_enRating" cardinality="OneToMany" p1:Guid="903b15b9-f1b8-4cfd-835d-e18bb48265d7">
+      <end1 multiplicity="One" name="enMovie" class="enRating" relation-class="enMovie" constrained="True" lazy="False" p1:Guid="0acb4163-0ff6-421f-905a-6c2db9f58dab">
+        <property name="mov_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enRatings" class="enMovie" relation-class="enRating" lazy="False" p1:Guid="2e7cedbc-e7af-437c-b5c0-48832c22eefc">
+        <property name="mov_id" />
+      </end2>
+    </association>
+    <association name="enStreaming_enMovie_Streaming" cardinality="OneToMany" p1:Guid="c347674b-d83e-4a9d-bde6-e7e8589b73f8">
+      <end1 multiplicity="One" name="enStreaming" class="enMovie_Streaming" relation-class="enStreaming" constrained="True" lazy="False" p1:Guid="89f52124-7024-43b4-88f0-7fcb2ed0e4fc">
+        <property name="streaming_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Streamings" class="enStreaming" relation-class="enMovie_Streaming" lazy="False" p1:Guid="36bf932b-93fa-465d-93d6-e51c304c1761">
+        <property name="streaming_id" />
+      </end2>
+    </association>
+    <association name="enMovie_enMovie_Streaming" cardinality="OneToMany" p1:Guid="09224a00-5a77-4b43-b505-8c059fe8bfac">
+      <end1 multiplicity="One" name="enMovie" class="enMovie_Streaming" relation-class="enMovie" constrained="True" lazy="False" p1:Guid="cc6efe17-f3b1-4a36-8af0-325cc425d1f4">
+        <property name="mov_id" />
+      </end1>
+      <end2 multiplicity="Many" name="enMovie_Streamings" class="enMovie" relation-class="enMovie_Streaming" lazy="False" p1:Guid="f06d6344-1589-4a28-bbad-3c3ddba27bdf">
+        <property name="mov_id" />
+      </end2>
+    </association>
+  </associations>
+</efcore>
