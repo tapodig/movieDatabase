@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\1997Annie\Documents\movieDatabase\movieDatabase\movieDatabase\App.xaml
-4305572022
+9-1437880399
 
-201334140593
-222-450560488
-About.xaml;Login.xaml;MainWindow.xaml;Pages\adatok.xaml;
+271486719688
+2231150120951
+About.xaml;databaseManagment.xaml;Login.xaml;MainWindow.xaml;Pages\adatok.xaml;Pages\InsertActor.xaml;Pages\InsertDirector.xaml;Pages\InsertGenres.xaml;Pages\InsertMovie.xaml;
 
-True
+False
 

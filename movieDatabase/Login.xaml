@@ -21,8 +21,8 @@
         <Label Grid.Row="1" Content="Felhasználónév"/>
         <Label Grid.Row="2" Content="Jelszó"/>
 
-        <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBox x:Name="tbUser" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBox x:Name="pbPwd" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
         <Button x:Name="btLogin" Grid.Column="0" Grid.Row="3" Content="Bejelentkezés" Click="btLogin_Click"/>
         <Button x:Name="btCancel" Grid.Column="1" Grid.Row="3" Content="Mégse" Click="btCancel_Click"/>
     </Grid>

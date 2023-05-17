@@ -1,0 +1,20 @@
+﻿<Page x:Class="movieDatabase.Pages.InsertDirector"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:movieDatabase.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InsertDirector">
+
+    <Grid Background="LightGreen">
+        <StackPanel Width="350">
+            <Label>Rendező keresztneve</Label>
+            <TextBox x:Name="tbDirFname"/>
+            <Label>Rendező vezetékneve</Label>
+            <TextBox x:Name="tbDirLname"/>
+            <Button x:Name="btInsert" Content="Beszúrás" Click="btInsert_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="movieDatabase.databaseManagment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:movieDatabase"
+        mc:Ignorable="d"
+        Title="databaseManagment" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Beszúrás">
+                    <MenuItem Header="Film" x:Name="btInsetMovie" Click="btInsetMovie_Click"/>
+                    <MenuItem Header="Szinész" x:Name="btInsertActor" Click="btInsertActor_Click"/>
+                    <MenuItem Header="Rendező" x:Name="btInsertDirector" Click="btInsertDirector_Click"/>
+                    <MenuItem Header="Műfaj" x:Name="btInsertGenres" Click="btInsertGenres_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Frame x:Name="frMain" Grid.Row="1" NavigationUIVisibility="Hidden" Source=""/>
+    </Grid>
+</Window>

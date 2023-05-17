@@ -10,15 +10,30 @@
     <Compile Update="About.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="databaseManagment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\adatok.xaml.cs">
+    <Compile Update="Pages\InsertActor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\InsertDirector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\InsertGenres.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\InsertMovie.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="About.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="databaseManagment.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
@@ -27,7 +42,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\adatok.xaml">
+    <Page Update="Pages\InsertActor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\InsertDirector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\InsertGenres.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\InsertMovie.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

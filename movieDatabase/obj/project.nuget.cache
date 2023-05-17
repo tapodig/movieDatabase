@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5bwQ6p0nkvuhHiE3/oib6bTxikFJd4jIJnzvwJl1mDanqz2bj09YGtFeJvwr/OmorL/VUCL6KgYpVZjEfZBJWg==",
+  "dgSpecHash": "GT2pOUxYJTWHIpj0pdLVuTgbUPLwwKDhr7+Hf/9XduEziF9i8jRuDm+82OGTASdJ/1ISEa9wZo0xFutVP1AX2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1997Annie\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\1997Annie\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\1997Annie\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\1997Annie\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\1997Annie\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\1997Annie\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
