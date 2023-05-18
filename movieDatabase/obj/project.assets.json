@@ -3257,19 +3257,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\1997Annie\\.nuget\\packages\\": {}
+    "C:\\Users\\gyorg\\.nuget\\packages\\": {},
+    "D:\\visual studio\\shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
+      "projectUniqueName": "D:\\C#\\moviedatabase\\movieDatabase\\movieDatabase.csproj",
       "projectName": "movieDatabase",
-      "projectPath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
-      "packagesPath": "C:\\Users\\1997Annie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\obj\\",
+      "projectPath": "D:\\C#\\moviedatabase\\movieDatabase\\movieDatabase.csproj",
+      "packagesPath": "C:\\Users\\gyorg\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\moviedatabase\\movieDatabase\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\visual studio\\shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\1997Annie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gyorg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3277,6 +3282,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

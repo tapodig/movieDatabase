@@ -69,7 +69,7 @@ namespace movieDatabase.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/movieDatabase;component/pages/insertgenres.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/movieDatabase;V1.0.0.0;component/pages/insertgenres.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\InsertGenres.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
