@@ -19,7 +19,11 @@
                     <MenuItem Header="Rendező" x:Name="btInsertDirector" Click="btInsertDirector_Click"/>
                     <MenuItem Header="Műfaj" x:Name="btInsertGenres" Click="btInsertGenres_Click"/>
                 </MenuItem>
+                <MenuItem Header="Hozzárendelés">
+                    <MenuItem Header="Szinész->Film" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
+                </MenuItem>
             </Menu>
+            
         </DockPanel>
         <Frame x:Name="frMain" Grid.Row="1" NavigationUIVisibility="Hidden" Source=""/>
     </Grid>

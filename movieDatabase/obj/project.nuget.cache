@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GT2pOUxYJTWHIpj0pdLVuTgbUPLwwKDhr7+Hf/9XduEziF9i8jRuDm+82OGTASdJ/1ISEa9wZo0xFutVP1AX2w==",
+  "dgSpecHash": "h2pPIejG8Bob31OUD/8zIDMZGL3HjtvOjmaWhWtUruOtpHKkqUonTzdiW1dyxCzg6wEBxmfBir3cBRyP5QcLdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
+  "projectFilePath": "E:\\git\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1997Annie\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\1997Annie\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

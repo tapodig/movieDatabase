@@ -44,5 +44,10 @@ namespace movieDatabase
         {
             frMain.NavigationService.Navigate(new InsertGenres());
         }
+
+        private void btConnectMovActor_Click(object sender, RoutedEventArgs e)
+        {
+            frMain.NavigationService.Navigate(new InsertConnection());
+        }
     }
 }

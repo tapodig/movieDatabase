@@ -3262,11 +3262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
+      "projectUniqueName": "E:\\git\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
       "projectName": "movieDatabase",
-      "projectPath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
+      "projectPath": "E:\\git\\movieDatabase\\movieDatabase\\movieDatabase.csproj",
       "packagesPath": "C:\\Users\\1997Annie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1997Annie\\Documents\\movieDatabase\\movieDatabase\\movieDatabase\\obj\\",
+      "outputPath": "E:\\git\\movieDatabase\\movieDatabase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1997Annie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3331,7 +3331,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

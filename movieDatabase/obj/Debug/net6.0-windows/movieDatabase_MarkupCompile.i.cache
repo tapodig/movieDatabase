@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\1997Annie\Documents\movieDatabase\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\
+E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\
 movieDatabase
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\1997Annie\Documents\movieDatabase\movieDatabase\movieDatabase\App.xaml
-9-1437880399
+E:\git\movieDatabase\movieDatabase\App.xaml
+10-1562282873
 
-271486719688
+28-713001109
 2231150120951
-About.xaml;databaseManagment.xaml;Login.xaml;MainWindow.xaml;Pages\adatok.xaml;Pages\InsertActor.xaml;Pages\InsertDirector.xaml;Pages\InsertGenres.xaml;Pages\InsertMovie.xaml;
+About.xaml;databaseManagment.xaml;Login.xaml;MainWindow.xaml;Pages\adatok.xaml;Pages\InsertActor.xaml;Pages\InsertConnection.xaml;Pages\InsertDirector.xaml;Pages\InsertGenres.xaml;Pages\InsertMovie.xaml;
 
-False
+True
 
