@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InsertConnection">
 
-    <Grid  Background="LightGreen">
+    <Grid  Background="#555555">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -18,11 +18,15 @@
             <RowDefinition Height="330"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">Movies</Label>
-        <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">Actors</Label>
+        <Label Foreground="White" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">Movies</Label>
+        <Label Foreground="White" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">Actors</Label>
         <DataGrid x:Name="dgGridMovies" SelectedCellsChanged="dgGridMovies_SelectedCellsChanged" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding}"/>
         <DataGrid x:Name="dgGridActors" SelectionChanged="dgGridActors_SelectionChanged" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}"/>
-        <TextBox x:Name="tbRole" Grid.Row="2" Grid.Column="0"></TextBox>
-        <Button x:Name="btnInsert"   Grid.Row="2" Grid.Column="1" Click="btnInsert_Click">Insert</Button>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Label Foreground="White">Szerep:</Label>
+            <TextBox Height="35" Width="300" x:Name="tbRole" HorizontalAlignment="Left" ></TextBox>
+        </StackPanel>
+        
+        <Button Height="30" Width="200" x:Name="btnInsert"   Grid.Row="2" Grid.Column="1" Click="btnInsert_Click">Insert</Button>
     </Grid>
 </Page>

@@ -8,13 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InsertActor">
 
-    <Grid Background="LightGreen">
+    <Grid Background="#555555">
         <StackPanel Width="350">
-            <Label>Szinész Keresztneve</Label>
+            <Label Foreground="White">Szinész Keresztneve</Label>
             <TextBox x:Name="tbActFname"/>
-            <Label>Szinész vezetékneve</Label>
+            <Label Foreground="White">Szinész vezetékneve</Label>
             <TextBox x:Name="tbActLname"/>
-            <Label>Szinész neme</Label>
+            <Label Foreground="White">Szinész neme</Label>
             <TabControl x:Name="tcActorGender" SelectionChanged="tcActorGender_SelectionChanged">
                 <TabItem Header="Férfi" Name="male"/>
                 <TabItem Header="Nő" Name="femaile"/>

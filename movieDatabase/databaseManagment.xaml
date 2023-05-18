@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:movieDatabase"
         mc:Ignorable="d"
-        Title="databaseManagment" Height="450" Width="800">
-    <Grid>
+        Title="databaseManagment" Height="500" Width="800">
+    <Grid Background="#555555">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DockPanel Grid.Row="0">
-            <Menu DockPanel.Dock="Top">
+        <DockPanel  Grid.Row="0">
+            <Menu Foreground="White" Background="#555555" DockPanel.Dock="Top">
                 <MenuItem Header="Beszúrás">
-                    <MenuItem Header="Film" x:Name="btInsetMovie" Click="btInsetMovie_Click"/>
-                    <MenuItem Header="Szinész" x:Name="btInsertActor" Click="btInsertActor_Click"/>
-                    <MenuItem Header="Rendező" x:Name="btInsertDirector" Click="btInsertDirector_Click"/>
-                    <MenuItem Header="Műfaj" x:Name="btInsertGenres" Click="btInsertGenres_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Film" x:Name="btInsetMovie" Click="btInsetMovie_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Szinész" x:Name="btInsertActor" Click="btInsertActor_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Rendező" x:Name="btInsertDirector" Click="btInsertDirector_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555"  Header="Műfaj" x:Name="btInsertGenres" Click="btInsertGenres_Click"/>
                 </MenuItem>
                 <MenuItem Header="Hozzárendelés">
-                    <MenuItem Header="Szinész->Film" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Szinész->Film" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
                 </MenuItem>
             </Menu>
             

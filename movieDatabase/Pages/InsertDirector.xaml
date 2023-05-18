@@ -8,11 +8,11 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InsertDirector">
 
-    <Grid Background="LightGreen">
+    <Grid Background="#555555">
         <StackPanel Width="350">
-            <Label>Rendező keresztneve</Label>
+            <Label Foreground="White">Rendező keresztneve</Label>
             <TextBox x:Name="tbDirFname"/>
-            <Label>Rendező vezetékneve</Label>
+            <Label Foreground="White">Rendező vezetékneve</Label>
             <TextBox x:Name="tbDirLname"/>
             <Button x:Name="btInsert" Content="Beszúrás" Click="btInsert_Click"/>
         </StackPanel>

@@ -46,7 +46,6 @@ namespace movieDatabase
             // string queryString = "SELECT * FROM Movie WHERE mov_title like \'Csúcsformában\'";
             string queryString = "SELECT mov_title FROM Movie WHERE mov_title like \'%" + kereso.Text + "%\'";
 
-           // SqlCommand command = new SqlCommand(queryString, connection);
 
             
             SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);
@@ -54,7 +53,6 @@ namespace movieDatabase
             adapter.Fill(dataSet);
 
             dgGrid.DataContext = dataSet.Tables[0];
-           // reader.Close();
 
             connection.Close();
         }

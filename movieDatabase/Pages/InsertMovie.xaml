@@ -8,25 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="InsertMovie">
 
-    <Grid Background="LightGreen">
+    <Grid Background="#555555">
         <StackPanel Width="350">
-            <Label>Film cím</Label>
+            <Label Foreground="White">Film cím</Label>
             <TextBox x:Name="tbMovieTitle"/>
-            <Label>Film leírás</Label>
+            <Label Foreground="White">Film leírás</Label>
             <TextBox x:Name="tbMovieDesc"/>
-            <Label>Évjárat</Label>
+            <Label Foreground="White">Évjárat</Label>
             <TextBox x:Name="tbMovieYear"/>
-            <Label>Film hossz</Label>
+            <Label Foreground="White">Film hossz (percben)</Label>
             <TextBox x:Name="tbMovieLong"/>
-            <Label>Eredeti nyelv</Label>
+            <Label Foreground="White">Eredeti nyelv</Label>
             <TextBox x:Name="tbMovieLang"/>
-            <Label>Megjelenési dátuma (YYYY-MM-DD)</Label>
+            <Label Foreground="White">Megjelenési dátuma (YYYY-MM-DD)</Label>
             <TextBox x:Name="dpMovieDtRel"/>
-            <Label>Állam</Label>
+            <Label Foreground="White">Állam</Label>
             <TextBox x:Name="tbMovieRelCountry"/>
-            <Label>trailer</Label>
+            <Label Foreground="White">trailer (fájlnév)</Label>
             <TextBox x:Name="tbMobieTrailer"/>
-            <Label>Picture</Label>
+            <Label Foreground="White">Picture (hivatkozás cím)</Label>
             <TextBox x:Name="tbMoviPic"/>
             <Button Content="Beszúr" x:Name="btInsertMovie" Click="btInsertMovie_Click"/>
         </StackPanel>

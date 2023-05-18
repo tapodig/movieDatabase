@@ -58,13 +58,11 @@ namespace movieDatabase.Pages
         {
             if (tbRole.Text != "" || tbRole.Text !=null)
             {
-                //SqlConnection connection = new SqlConnection(connectionString);
                 
                 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    //connection.Query<UsersModel>("SET ANSI_WARNINGS OFF");
                     
                     connection.Query<UsersModel>("INSERT INTO Movie_Cast (act_id, mov_id, role) VALUES('"+ getAct_ID + "','" + getMov_ID+ "','"+tbRole.Text + "')");
                     MessageBox.Show("Hozzárendelés megtörtént!");

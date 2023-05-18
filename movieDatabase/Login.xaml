@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:movieDatabase"
         mc:Ignorable="d"
         Title="Bejelentkezés" Height="180" Width="300" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="#555555">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -18,8 +18,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-        <Label Grid.Row="1" Content="Felhasználónév"/>
-        <Label Grid.Row="2" Content="Jelszó"/>
+        <Label Foreground="White" Grid.Row="1" Content="Felhasználónév"/>
+        <Label Foreground="White" Grid.Row="2" Content="Jelszó"/>
 
         <TextBox x:Name="tbUser" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
         <TextBox x:Name="pbPwd" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
