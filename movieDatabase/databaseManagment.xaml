@@ -19,8 +19,8 @@
                     <MenuItem BorderThickness="0" Background="#555555" Header="Rendező" x:Name="btInsertDirector" Click="btInsertDirector_Click"/>
                     <MenuItem BorderThickness="0" Background="#555555"  Header="Műfaj" x:Name="btInsertGenres" Click="btInsertGenres_Click"/>
                 </MenuItem>
-                <MenuItem Header="Hozzárendelés">
-                    <MenuItem BorderThickness="0" Background="#555555" Header="Szinész->Film" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
+                <MenuItem Header="Rekordok">
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Hozzárendelés" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
                 </MenuItem>
             </Menu>
             

@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Filmadatbazis;
 using movieDatabase.Model;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace movieDatabase.Pages
             using (var connection = ConFactory.ConnFactory.GetOpenConnection())
             {
 
-                connection.Query<UsersModel>("INSERT INTO Genres (gen_title) VALUES('" + tbInsertGenres.Text +"')");
+                connection.Query<enGenres>("INSERT INTO Genres (gen_title) VALUES('" + tbInsertGenres.Text +"')");
                 MessageBox.Show("A rekord beszúrása megtörtént!");
             }
         }

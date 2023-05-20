@@ -302,3 +302,8 @@ E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\refint\movieDatabase
 E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\movieDatabase.pdb
 E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\movieDatabase.genruntimeconfig.cache
 E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\ref\movieDatabase.dll
+E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\trailer.g.cs
+E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\trailer.baml
+E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\RushHour.mp4
+E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\CentralIntelligence.mp4
+E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\RushHour2.mp4

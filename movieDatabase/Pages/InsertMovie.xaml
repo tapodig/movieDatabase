@@ -25,7 +25,8 @@
             <Label Foreground="White">Állam</Label>
             <TextBox x:Name="tbMovieRelCountry"/>
             <Label Foreground="White">trailer (fájlnév)</Label>
-            <TextBox x:Name="tbMobieTrailer"/>
+
+            <Button x:Name="btFileBrowser" Content="Tallózás" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btFileBrowser_Click"/>
             <Label Foreground="White">Picture (hivatkozás cím)</Label>
             <TextBox x:Name="tbMoviPic"/>
             <Button Content="Beszúr" x:Name="btInsertMovie" Click="btInsertMovie_Click"/>

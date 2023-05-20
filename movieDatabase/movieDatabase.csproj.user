@@ -28,6 +28,9 @@
     <Compile Update="Pages\InsertMovie.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="trailer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="About.xaml">
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\InsertMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="trailer.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

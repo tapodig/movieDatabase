@@ -50,6 +50,9 @@
             <TextBlock Foreground="White" FontSize="18" TextWrapping="Wrap"  x:Name="director"  VerticalAlignment="Top" />
 
         </StackPanel>
-        <MediaElement x:Name="trailer" LoadedBehavior="Manual" Source="trailers/Csúcsformában.mp4" Width = "200" Height = "120" Grid.Column="1" Grid.Row="3"/>
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Label Foreground="White">Előzetes:</Label>
+            <Button x:Name="btViewTrailer" Content="Megtekint" Click="btViewTrailer_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

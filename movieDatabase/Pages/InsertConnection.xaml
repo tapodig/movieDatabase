@@ -19,12 +19,23 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Foreground="White" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">Movies</Label>
-        <Label Foreground="White" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">Actors</Label>
+        
         <DataGrid x:Name="dgGridMovies" SelectedCellsChanged="dgGridMovies_SelectedCellsChanged" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding}"/>
-        <DataGrid x:Name="dgGridActors" SelectionChanged="dgGridActors_SelectionChanged" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}"/>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Foreground="White" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">Tables</Label>
+            <TabControl x:Name="tcdgSelector" SelectionChanged="tcdgSelector_SelectionChanged">
+                <TabItem Header="Szinészek" Name="actors"/>
+                <TabItem Header="Rendezők" Name="directors"/>
+                <TabItem Header="Műfajok" Name="genres"/>
+            </TabControl>
+        </StackPanel>
+        
+        <DataGrid x:Name="dgGridActors" SelectionChanged="dgGridActors_SelectionChanged" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}" Visibility="Hidden"/>
+        <DataGrid x:Name="dgGridDirectors" SelectionChanged="dgGridDirectors_SelectionChanged" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}" Visibility="Hidden"/>
+        <DataGrid x:Name="dgGridGenres" SelectionChanged="dgGridGenres_SelectionChanged" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}" Visibility="Hidden"/>
         <StackPanel Grid.Row="2" Grid.Column="0">
-            <Label Foreground="White">Szerep:</Label>
-            <TextBox Height="35" Width="300" x:Name="tbRole" HorizontalAlignment="Left" ></TextBox>
+            <Label x:Name="llRole" Foreground="White" Visibility="Hidden">Szerep:</Label>
+            <TextBox Height="35" Width="300" x:Name="tbRole" HorizontalAlignment="Left" Visibility="Hidden" ></TextBox>
         </StackPanel>
         
         <Button Height="30" Width="200" x:Name="btnInsert"   Grid.Row="2" Grid.Column="1" Click="btnInsert_Click">Insert</Button>

@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Filmadatbazis;
 using movieDatabase.Model;
 using System;
 using System.Collections.Generic;
@@ -47,8 +48,8 @@ namespace movieDatabase.Pages
             using (var connection = ConFactory.ConnFactory.GetOpenConnection())
             {
                 
-                connection.Query<UsersModel>("SET ANSI_WARNINGS OFF");
-                connection.Query<UsersModel>("INSERT INTO Actor (act_fname, act_lname, act_gender) VALUES('" + tbActFname.Text + "','" + tbActLname.Text + "','"+ ActorGender + "')");
+                connection.Query<enActor>("SET ANSI_WARNINGS OFF");
+                connection.Query<enActor>("INSERT INTO Actor (act_fname, act_lname, act_gender) VALUES('" + tbActFname.Text + "','" + tbActLname.Text + "','"+ ActorGender + "')");
                 MessageBox.Show("A rekord beszúrása megtörtént!");
             }
         }
