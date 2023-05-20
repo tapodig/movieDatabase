@@ -1,10 +1,10 @@
 SET IDENTITY_INSERT [dbo].[Movie] ON 
 GO
-INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(1,'Csúcsformában','Amikor a hongkongi nyomozót Los Angelesbe küldik egy emberrablési ügy miatt, az FBI egy pimasz helyi zsarut jelöl ki mellé, hogy elvonja a figyelmét az ügyről.',1998,97,'Angol','1998-09-18','USA','empty','https://www.mafab.hu/static/profiles/2014/293/11/44410_63.jpg')
+INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(1,'Csúcsformában','Amikor a hongkongi nyomozót Los Angelesbe küldik egy emberrablési ügy miatt, az FBI egy pimasz helyi zsarut jelöl ki mellé, hogy elvonja a figyelmét az ügyről.',1998,97,'Angol','1998-09-18','USA','RushHour.mp4','https://www.mafab.hu/static/profiles/2014/293/11/44410_63.jpg')
 GO
-INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(2,'Központi Hírszerzés','A CIA-ügynök felkeresi könyvelőként dolgozó, egykori középiskolai haverját, hogy segítsen felgöngyölíteni az amerikai beépített ügynökök elleni halálos összeesküvést. ',2016,90,'Angol','2001-08-03','USA','empty','https://m.media-amazon.com/images/M/MV5BMjA2NzEzNjIwNl5BMl5BanBnXkFtZTgwNzgwMTEzNzE@._V1_.jpg')
+INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(2,'Központi Hírszerzés','A CIA-ügynök felkeresi könyvelőként dolgozó, egykori középiskolai haverját, hogy segítsen felgöngyölíteni az amerikai beépített ügynökök elleni halálos összeesküvést. ',2016,90,'Angol','2001-08-03','USA','CentralIntelligence.mp4','https://m.media-amazon.com/images/M/MV5BMjA2NzEzNjIwNl5BMl5BanBnXkFtZTgwNzgwMTEzNzE@._V1_.jpg')
 GO
-INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(3,'Csúcsformában 2','Amikor bombatámadás éri az Egyesült Államok hongkongi nagykövetséget, Lee felügyelő és a vakációzó Carter nyomozó egyesítik erőiket egy nemzetközi bűnszövetkezet ellen.',2001,107,'Angol','2016-06-17','USA','empty','https://www.mafab.hu/static/2014/268/13/44955_9.jpg')
+INSERT INTO [dbo].[Movie]([mov_id],[mov_title],[mov_description],[move_year],[mov_time],[mov_lang],[mov_dt_rel],[mov_rel_country],[mov_trailer],[mov_pic]) VALUES(3,'Csúcsformában 2','Amikor bombatámadás éri az Egyesült Államok hongkongi nagykövetséget, Lee felügyelő és a vakációzó Carter nyomozó egyesítik erőiket egy nemzetközi bűnszövetkezet ellen.',2001,107,'Angol','2016-06-17','USA','RushHour2.mp4','https://www.mafab.hu/static/2014/268/13/44955_9.jpg')
 GO
 SET IDENTITY_INSERT [dbo].[Movie] OFF
 GO
@@ -77,15 +77,15 @@ GO
 SET IDENTITY_INSERT [dbo].[Genres] ON 
 GO
 
-INSERT INTO [dbo].[Genres]([gen_id],[act_fname]) VALUES(1,'Bünügyi filmek')
+INSERT INTO [dbo].[Genres]([gen_id],[gen_title]) VALUES(1,'Bünügyi filmek')
 GO
-INSERT INTO [dbo].[Genres]([gen_id],[act_fname]) VALUES(2,'Vígjátékok')
+INSERT INTO [dbo].[Genres]([gen_id],[gen_title]) VALUES(2,'Vígjátékok')
 GO
-INSERT INTO [dbo].[Genres]([gen_id],[act_fname]) VALUES(4,'Harcművészeti filmek')
+INSERT INTO [dbo].[Genres]([gen_id],[gen_title]) VALUES(4,'Harcművészeti filmek')
 GO
-INSERT INTO [dbo].[Genres]([gen_id],[act_fname]) VALUES(1002,'Akció és Kaland')
+INSERT INTO [dbo].[Genres]([gen_id],[gen_title]) VALUES(1002,'Akció és Kaland')
 GO
-INSERT INTO [dbo].[Genres]([gen_id],[act_fname]) VALUES(1003,'Kémfilmek')
+INSERT INTO [dbo].[Genres]([gen_id],[gen_title]) VALUES(1003,'Kémfilmek')
 GO
 
 SET IDENTITY_INSERT [dbo].[Genres] OFF 

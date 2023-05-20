@@ -34,7 +34,7 @@ namespace movieDatabase.Pages
         public InsertConnection()
         {
             InitializeComponent();
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString);
             connection.Open();
             //filmek
             string queryString = "SELECT mov_id, mov_title FROM Movie";

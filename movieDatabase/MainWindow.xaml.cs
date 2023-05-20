@@ -63,6 +63,7 @@ namespace movieDatabase
 
         private void dgGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            btViewTrailer.Visibility = Visibility.Visible;
             SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString);
             connection.Open();
 

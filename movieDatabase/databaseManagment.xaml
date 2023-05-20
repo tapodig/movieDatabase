@@ -21,6 +21,7 @@
                 </MenuItem>
                 <MenuItem Header="Rekordok">
                     <MenuItem BorderThickness="0" Background="#555555" Header="Hozzárendelés" x:Name="btConnectMovActor" Click="btConnectMovActor_Click"/>
+                    <MenuItem BorderThickness="0" Background="#555555" Header="Rekod Törlés" x:Name="btdeleteMovie" Click="btdeleteMovie_Click"/>
                 </MenuItem>
             </Menu>
             

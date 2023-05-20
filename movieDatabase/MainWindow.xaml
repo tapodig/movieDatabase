@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:movieDatabase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1000">
+        Title="Movie Database" Height="800" Width="1000">
     <Grid Background="#555555">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -52,7 +52,7 @@
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1">
             <Label Foreground="White">Előzetes:</Label>
-            <Button x:Name="btViewTrailer" Content="Megtekint" Click="btViewTrailer_Click"/>
+            <Button x:Name="btViewTrailer" Content="Megtekint" Click="btViewTrailer_Click" Visibility="Hidden"/>
         </StackPanel>
     </Grid>
 </Window>

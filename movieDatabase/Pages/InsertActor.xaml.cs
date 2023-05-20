@@ -47,10 +47,21 @@ namespace movieDatabase.Pages
         {
             using (var connection = ConFactory.ConnFactory.GetOpenConnection())
             {
+                var check = connection.Query<enActor>("select * from Actor where act_fname = '" + tbActFname.Text + "' and  act_lname='" + tbActLname.Text + "'");
+                var _currentActor = check.FirstOrDefault(u => u.act_fname == tbActFname.Text.ToString());
+                if (_currentActor == null)
+                {
+                    connection.Query<enActor>("SET ANSI_WARNINGS OFF");
+                    connection.Query<enActor>("INSERT INTO Actor (act_fname, act_lname, act_gender) VALUES('" + tbActFname.Text + "','" + tbActLname.Text + "','" + ActorGender + "')");
+                    MessageBox.Show("A rekord beszúrása megtörtént!");
+
+                }
+                else
+                {
+                    MessageBox.Show("A szinész már szerepel az adatbázisban!");
+                }
+
                 
-                connection.Query<enActor>("SET ANSI_WARNINGS OFF");
-                connection.Query<enActor>("INSERT INTO Actor (act_fname, act_lname, act_gender) VALUES('" + tbActFname.Text + "','" + tbActLname.Text + "','"+ ActorGender + "')");
-                MessageBox.Show("A rekord beszúrása megtörtént!");
             }
         }
     }

@@ -32,9 +32,19 @@ namespace movieDatabase.Pages
         {
             using (var connection = ConFactory.ConnFactory.GetOpenConnection())
             {
+                var check = connection.Query<enGenres>("select * from Genres where gen_title = '" + tbInsertGenres.Text + "'");
+                var _currentGenres = check.FirstOrDefault(u => u.gen_title == tbInsertGenres.Text.ToString());
+                if (_currentGenres == null) 
+                {
+                    connection.Query<enGenres>("INSERT INTO Genres (gen_title) VALUES('" + tbInsertGenres.Text + "')");
+                    MessageBox.Show("A rekord beszúrása megtörtént!");
+                }
+                else
+                {
+                    MessageBox.Show("A műfajtipus már szerepel az adatbázisban!");
+                }
 
-                connection.Query<enGenres>("INSERT INTO Genres (gen_title) VALUES('" + tbInsertGenres.Text +"')");
-                MessageBox.Show("A rekord beszúrása megtörtént!");
+                
             }
         }
     }

@@ -49,5 +49,10 @@ namespace movieDatabase
         {
             frMain.NavigationService.Navigate(new InsertConnection());
         }
+
+        private void btdeleteMovie_Click(object sender, RoutedEventArgs e)
+        {
+            frMain.NavigationService.Navigate(new deleteRecord());
+        }
     }
 }

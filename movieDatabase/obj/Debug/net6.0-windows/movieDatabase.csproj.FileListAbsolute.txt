@@ -307,3 +307,5 @@ E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\trailer.baml
 E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\RushHour.mp4
 E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\CentralIntelligence.mp4
 E:\git\movieDatabase\movieDatabase\bin\Debug\net6.0-windows\trailers\RushHour2.mp4
+E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\Pages\deleteRecord.g.cs
+E:\git\movieDatabase\movieDatabase\obj\Debug\net6.0-windows\Pages\deleteRecord.baml

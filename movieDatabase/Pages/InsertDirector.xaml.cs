@@ -32,9 +32,18 @@ namespace movieDatabase.Pages
         {
             using (var connection = ConFactory.ConnFactory.GetOpenConnection())
             {
-
-                connection.Query<enDirector>("INSERT INTO Director (dir_fname, dir_lname) VALUES('" + tbDirFname.Text + "','" + tbDirLname.Text + "')");
-                MessageBox.Show("A rekord beszúrása megtörtént!");
+                var check = connection.Query<enDirector>("select * from Director where dir_fname = '" + tbDirFname.Text + "' and  dir_lname='" + tbDirLname.Text + "'");
+                var _currentDirector = check.FirstOrDefault(u => u.dir_fname == tbDirFname.Text.ToString());
+                if (_currentDirector == null) 
+                {
+                    connection.Query<enDirector>("INSERT INTO Director (dir_fname, dir_lname) VALUES('" + tbDirFname.Text + "','" + tbDirLname.Text + "')");
+                    MessageBox.Show("A rekord beszúrása megtörtént!");
+                }
+                else
+                {
+                    MessageBox.Show("A rendező már szerepel az adatbázisban!");
+                }
+                
             }
         }
     }
