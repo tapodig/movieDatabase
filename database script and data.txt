@@ -2,6 +2,7 @@
 -- Script date 2023. 04. 26. 20:04:18
 -- Target Server: SQL Server
 -- Server Version: 2019
+--          ----------------------------->>>>>>> Database name: movieDatabase <<<<<----------------------
 
 -- 
 -- Creating a table dbo.Streaming 
